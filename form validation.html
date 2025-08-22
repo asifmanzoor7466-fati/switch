@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function data()
+        {
+            let a=document.getElementById("n1").value;
+             let b=document.getElementById("n2").value;
+             if(a==""||b=="")
+             {
+                alert("All the fields are required!");
+                return false;
+             }
+             else{
+                true;
+             }
+        }
+    </script>
+<form onsubmit="data()" action="project1.html">
+USername:<input type="text" id="n1" required><br> <br> 
+Password:<input type="password" id="n2" required><br> <br> 
+<input type="submit" value="login" onclick="data()">
+</form>
+</body>
+</html>
