@@ -55,6 +55,26 @@ h1{
     <p id="result"></p>
     </fieldset>
     </form>
-    <script src="switch.js"></script>
+    
+    <div id="result">
+        <?php
+        if (isset($_POST['roll'])) {
+            $roll = $_POST['roll'];
+
+            switch ($roll) {
+                case "100":
+                    echo "Name: Asif Manzoor <br> Roll Number: 100 <br> Result: Pass";
+                    break;
+
+                case "101":
+                    echo "Name: Irfan Farooq Bistati <br> Roll Number: 101 <br> Result: Pass";
+                    break;
+
+                default:
+                  echo "Invalid Roll Number";
+            }
+        }
+        ?>
+    </div>
 </body>
 </html>
