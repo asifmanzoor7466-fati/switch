@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Switch</title>
+    <title>Document</title>
     <style>
 body{
     margin: 0;
@@ -47,36 +47,14 @@ h1{
 </head>
 <body>
     <h1> Switch Statement</h1><br><br> <br>
-    
-    <form class="cent" method="POST">
-        <fieldset class="f">
-            <legend><i><b>Student Info</b></i></legend>
-            
-            ID: <input type="text" placeholder="Enter your roll number" class="t" name="roll"><br><br><br>
-            
-            <button type="submit" class="i">Check Result</button><br><br><br>
-        </fieldset>
+     <form class="cent">
+    <fieldset class="f">
+        <legend><i><b>student info</b></i></legend>
+  ID :<input type="text" placeholder="enter your roll number" class="t" id="a"><br><br> <br>
+    <button type="button" onclick="check()" class="i"> check result</button><br><br> <br>
+    <p id="result"></p>
+    </fieldset>
     </form>
-
-    <div id="result">
-        <?php
-        if (isset($_POST['roll'])) {
-            $roll = $_POST['roll'];
-
-            switch ($roll) {
-                case "100":
-                    echo "Name: Asif Manzoor <br> Roll Number: 100 <br> Result: Pass";
-                    break;
-
-                case "101":
-                    echo "Name: Irfan Farooq Bistati <br> Roll Number: 101 <br> Result: Pass";
-                    break;
-
-                default:
-                    echo "Invalid Roll Number";
-            }
-        }
-        ?>
-    </div>
+    <script src="switch.js"></script>
 </body>
 </html>
